@@ -1,0 +1,37 @@
+{
+  "name": "Freelance Quote & Late-Payment Calculator",
+  "public_repo": "https://github.com/BluePeakFoundry/freelance-quote-late-payment-tool",
+  "public_url": "https://bluepeakfoundry.github.io/freelance-quote-late-payment-tool/",
+  "category": "business-planning-tool",
+  "money_verified_eur": 0,
+  "external_actions_performed": [
+    "published_public_github_repo",
+    "enabled_github_pages",
+    "published_public_feedback_issue_form",
+    "linked_from_bluepeakfoundry_org_profile"
+  ],
+  "analytics": {
+    "provider": "GoatCounter",
+    "cookie_free": true,
+    "events": [
+      "cta:freelance:start",
+      "cta:freelance:copy-proposal",
+      "cta:freelance:copy-reminder",
+      "lead:freelance-feedback"
+    ]
+  },
+  "privacy": {
+    "static_site": true,
+    "stores_inputs": false,
+    "server_submission": false,
+    "public_feedback_warning": "Do not post client names, bank details, tax IDs, invoice images, contracts, personal data, credentials, or confidential business information."
+  },
+  "validation_commands": [
+    "python3 -m unittest -q",
+    "python3 quote_tool.py --client \"Client example\" --project \"Website audit\" --net 1200 --hours 18 --vat 21 --withholding 15 --due-days 30 --late-days 20 --late-rate 11.15 --json sample_quote_20260901T140438Z.json --markdown sample_quote_20260901T140438Z.md",
+    "python3 validate_public_site.py",
+    "node --check app.js",
+    "node --check analytics.js",
+    "python3 -m json.tool manifest.json"
+  ]
+}

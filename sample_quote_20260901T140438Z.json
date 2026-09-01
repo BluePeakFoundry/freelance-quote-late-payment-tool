@@ -1,0 +1,33 @@
+{
+  "client": "Client example",
+  "project": "Website audit",
+  "invoice": {
+    "net_fee_eur": 1200.0,
+    "vat_rate_percent": 21.0,
+    "vat_eur": 252.0,
+    "withholding_rate_percent": 15.0,
+    "withholding_eur": 180.0,
+    "total_due_eur": 1272.0,
+    "effective_hourly_eur": 60.0,
+    "platform_fee_eur": 0.0,
+    "buffer_eur": 120.0,
+    "estimated_takehome_before_income_tax_eur": 1080.0,
+    "margin_status": "ok",
+    "margin_gap_eur": 0.0
+  },
+  "late_payment": {
+    "issue_date": "2026-09-01",
+    "due_date": "2026-10-01",
+    "late_days": 20,
+    "annual_late_rate_percent": 11.15,
+    "late_interest_eur": 7.77,
+    "total_if_paid_late_eur": 1279.77
+  },
+  "proposal_text": "Proposal for Client example: Website audit. Net fee: 1200.00 EUR. Editable VAT: 21% (252.00 EUR). Editable withholding: 15% (180.00 EUR). Total due: 1272.00 EUR. Estimated hours: 18; effective pre-income-tax/gross-expense hourly amount: 60.00 EUR/h.",
+  "reminder_text": "Friendly reminder for Client example: the Website audit invoice is due on 2026-10-01 for 1272.00 EUR. If paid 20 days late at an editable annual rate of 11.15%, the informational late amount would be 7.77 EUR.",
+  "disclaimers": [
+    "Informational planning tool: not legal, tax, accounting, collection, or professional advice.",
+    "VAT, withholding, late-payment rates, due dates, and fees are editable assumptions that should be verified before use."
+  ],
+  "money_verified_eur": 0
+}

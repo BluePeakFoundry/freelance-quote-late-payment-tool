@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://bluepeakfoundry.github.io/freelance-quote-late-payment-tool/sitemap.xml
