@@ -8,6 +8,7 @@ Public site: https://bluepeakfoundry.github.io/freelance-quote-late-payment-tool
 
 - Calculates net fee, editable VAT, editable withholding, total due, platform-fee/buffer impact, and effective EUR/hour.
 - Creates copyable proposal and payment reminder text.
+- Provides downloadable CSV and Markdown quote-prep templates for private use.
 - Runs entirely in the browser; no accounts, server submissions, or stored inputs.
 - Provides a public feedback channel for generalized product feedback only.
 

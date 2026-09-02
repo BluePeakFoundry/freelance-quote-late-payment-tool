@@ -1,0 +1,13 @@
+field,example,notes
+client_label,Client example,Use a private client name only in your own local copy
+project_label,Website audit,Short neutral project label
+net_fee_eur,1200,Fee before editable VAT or withholding assumptions
+estimated_hours,18,Include discovery delivery and admin time
+vat_percent,21,Editable assumption; verify current local rules
+withholding_percent,15,Editable assumption; verify current local rules
+platform_fee_percent,0,Marketplace/payment fee if applicable
+buffer_percent,10,Risk/scope buffer assumption
+minimum_target_eur_per_hour,35,Private target for margin check
+days_until_due,30,Contract/invoice payment term
+simulated_late_days,20,For reminder planning only
+annual_late_rate_percent,11.15,Editable assumption; verify contract and jurisdiction

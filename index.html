@@ -24,7 +24,7 @@
     <p class="eyebrow">Blue Peak Foundry</p>
     <h1>Freelance quote and late-payment calculator</h1>
     <p class="lead">Estimate a transparent quote, check your effective hourly margin, set a due date, and copy a simple payment reminder. Your inputs stay in the browser.</p>
-    <p class="hero-actions"><a class="button" href="#quote-form" data-analytics-event="cta:freelance:start" data-analytics-title="Freelance calculator start">Build a quote</a> <a class="button secondary" href="https://github.com/BluePeakFoundry/freelance-quote-late-payment-tool/issues/new?template=feedback.yml" data-analytics-event="lead:freelance-feedback" data-analytics-title="Freelance feedback issue form">Share sanitized feedback</a></p>
+    <p class="hero-actions"><a class="button" href="#quote-form" data-analytics-event="cta:freelance:start" data-analytics-title="Freelance calculator start">Build a quote</a> <a class="button secondary" href="downloads/freelance-quote-inputs.csv" data-analytics-event="download:freelance:inputs-csv" data-analytics-title="Download freelance quote inputs CSV">Download inputs CSV</a> <a class="button secondary" href="https://github.com/BluePeakFoundry/freelance-quote-late-payment-tool/issues/new?template=feedback.yml" data-analytics-event="lead:freelance-feedback" data-analytics-title="Freelance feedback issue form">Share sanitized feedback</a></p>
   </header>
 
   <main class="shell">
@@ -66,6 +66,15 @@
       <h2>Copyable payment reminder</h2>
       <textarea id="reminder" readonly aria-label="Copyable payment reminder"></textarea>
       <p><button type="button" id="copyReminder" class="button" data-analytics-event="cta:freelance:copy-reminder" data-analytics-title="Copy reminder text">Copy reminder</button></p>
+    </section>
+
+    <section class="download-panel" aria-labelledby="download-title">
+      <h2 id="download-title">Downloadable quote prep templates</h2>
+      <p>Use these static files in a private project folder before opening the calculator. They are examples only and should be adapted to your contract, taxes, and jurisdiction.</p>
+      <ul>
+        <li><a href="downloads/freelance-quote-inputs.csv" data-analytics-event="download:freelance:inputs-csv" data-analytics-title="Download freelance quote inputs CSV">Freelance quote inputs CSV</a></li>
+        <li><a href="downloads/freelance-quote-scope-template.md" data-analytics-event="download:freelance:scope-template" data-analytics-title="Download freelance scope template">Freelance quote scope template</a></li>
+      </ul>
     </section>
 
     <section class="limits" aria-labelledby="limits-title">

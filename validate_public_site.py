@@ -15,6 +15,9 @@ REQUIRED_FILES = [
     "robots.txt",
     "sitemap.xml",
     "manifest.json",
+    "downloads/README.md",
+    "downloads/freelance-quote-inputs.csv",
+    "downloads/freelance-quote-scope-template.md",
     ".github/ISSUE_TEMPLATE/feedback.yml",
 ]
 FORBIDDEN_PUBLIC_TERMS = ["R" + "ex", "Ser" + "gi", "autonomous", "money generated"]
@@ -25,6 +28,10 @@ REQUIRED_HTML_MARKERS = [
     "cta:freelance:copy-proposal",
     "cta:freelance:copy-reminder",
     "lead:freelance-feedback",
+    "download:freelance:inputs-csv",
+    "download:freelance:scope-template",
+    "downloads/freelance-quote-inputs.csv",
+    "downloads/freelance-quote-scope-template.md",
     "SoftwareApplication",
     "Do not include client names",
 ]
@@ -67,6 +74,10 @@ def main() -> int:
     parser = LinkParser(); parser.feed(html)
     if "https://github.com/BluePeakFoundry/freelance-quote-late-payment-tool/issues/new?template=feedback.yml" not in parser.links:
         raise SystemExit("feedback issue-form link missing")
+    if "downloads/freelance-quote-inputs.csv" not in parser.links:
+        raise SystemExit("download inputs CSV link missing")
+    if "downloads/freelance-quote-scope-template.md" not in parser.links:
+        raise SystemExit("download scope template link missing")
     feedback = read(".github/ISSUE_TEMPLATE/feedback.yml")
     missing_feedback = [m for m in REQUIRED_FEEDBACK_MARKERS if m not in feedback]
     if missing_feedback:
